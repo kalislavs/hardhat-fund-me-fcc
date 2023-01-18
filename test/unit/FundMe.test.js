@@ -3,7 +3,7 @@ const { deployments, ethers, getNamedAccounts, network } = require("hardhat")
 const { send } = require("process")
 const { developmentChains } = require("../../helper-hardhat-config.js")
 
-developmentChains.includes(network.name)
+!developmentChains.includes(network.name)
     ? describe.skip
     : describe("FundMe", async function () {
           let fundMe

@@ -36,7 +36,9 @@ module.exports = {
             url: GOERLI_RPC_URL,
             accounts: [PRIVATE_KEY],
             chainId: 5,
-            blockConfirmations: 6,
+            blockConfirmations: 1,
+            gas: 5000000,
+            gasPrice: 8000000000,
         },
     },
 
