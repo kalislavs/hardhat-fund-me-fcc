@@ -8,7 +8,6 @@ contract FunWithStorage {
     but the objects will be the keccak256(2), since 2 is the storage slot of the array */
     mapping(uint256 => bool) myMap; /* An empty slot is held at slot 3
     and the elements will be stored at keccak256(h(k) . p)
-
     p: The storage slot (aka, 3)
     k: The key in hex
     h: Some function based on the type. For uint256, it just pads the hex
